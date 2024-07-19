@@ -8,6 +8,10 @@
     "deploy": "vite build && gh-pages -d dist",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://dasistwei.github.io/glasses_website/"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
