@@ -1,0 +1,109 @@
+// location-logo
+@each $number, $url in $location-logos{
+  .#{$number}{
+    background-image: url($url);
+    background-position: center;
+    background-size: cover;
+  }
+}
+.locations{
+  // outline: 1px solid red;
+  padding-top: 96px;
+  padding-bottom: 80px;
+  color: black;
+}
+.locations-title{
+  border-left: 8px solid $red;
+}
+.location-select{
+  // outline: 1px solid red;
+  display: flex;
+  gap: 16px;
+}
+
+.location-selector{
+  /*移除箭頭樣式*/
+appearance:none;
+-moz-appearance:none;
+-webkit-appearance:none;
+background: url("../images/arrow_drop_down_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg") no-repeat right center transparent;
+width: 304px;
+padding: 6px 0px 6px 12px;
+color: #495057;
+font-size: 18px;
+}
+.location-detail-group{
+  // outline: 1px solid red;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: space-between;
+}
+.location-detail{
+  // outline: 1px solid red;
+  width: calc(33.333% - 24px);
+}
+.location-logo{
+  height: 224px;
+}
+.text-black{
+  color: black;
+}
+.store-name, .store-infos{
+  border: 1px solid #00000020;
+}
+.store-name{
+  padding: 8px 24px;
+}
+.store-infos{
+  padding: 16px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px 0;
+}
+.store-info{
+  display: flex;
+  gap: 0 8px;
+}
+.icon-black{
+  color: black;
+}
+.store-more-info{
+  width: 100%;
+  border: none;
+  background: black;
+  color: white;
+  cursor: pointer;
+  font-size: 19px;
+  padding: 16px 0;
+}
+.store-more-info:hover{
+  background: rgb(80, 78, 78);
+}
+@media screen and (max-width: 768px){
+  .location-detail{
+    // outline: 1px solid red;
+    width: calc(50% - 12px);
+  } 
+}
+@media screen and (max-width: 375px){
+  .locations{
+    padding-top: 40px;
+    padding-bottom: 64px;
+  }
+  .locations .container{
+    padding: 0 13px;
+  }
+  .location-select{
+    gap: 8px;
+  }
+  .location-selector{
+    width: 276px;
+  }
+  .location-detail{
+    width: 100%;
+  } 
+  .location-detail-group{
+    gap: 24 0;
+  }
+}

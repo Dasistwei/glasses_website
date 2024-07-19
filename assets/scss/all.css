@@ -1,0 +1,723 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: middle;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  line-height: 1.5;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 12px;
+  max-width: 1296px;
+}
+
+.fs-20 {
+  font-size: 20px;
+}
+
+.fs-24 {
+  font-size: 24px;
+}
+
+.fs-36 {
+  font-size: 36px;
+}
+
+.fs-48 {
+  font-size: 48px;
+}
+
+.fs-64 {
+  font-size: 64px;
+}
+
+.fw-bold {
+  font-weight: 700;
+}
+
+.fw-black {
+  font-weight: 900;
+}
+
+.fw-medium {
+  font-weight: 500;
+}
+
+.mr-4 {
+  margin-right: 4px;
+}
+
+.mb-4 {
+  margin-bottom: 4px;
+}
+
+.mb-8 {
+  margin-bottom: 8px;
+}
+
+.mt-16 {
+  margin-top: 16px;
+}
+
+.mb-24 {
+  margin-bottom: 24px;
+}
+
+.mb-48 {
+  margin-bottom: 48px;
+}
+
+.ptb-80 {
+  padding: 80px 0;
+}
+
+@media screen and (max-width: 375px) {
+  .fs-sm-16 {
+    font-size: 16px;
+  }
+  .fs-sm-24 {
+    font-size: 24px;
+  }
+  .mb-sm-24 {
+    margin-bottom: 24px;
+  }
+  .mb-sm-32 {
+    margin-bottom: 32px;
+  }
+  .mt-sm-24 {
+    margin-top: 24px;
+  }
+  .ptb-sm-40 {
+    padding: 40px 0;
+  }
+}
+body {
+  font-family: "Roboto", "Noto Sans TC", "Microsoft JhengHei", sans-serif;
+}
+
+.header {
+  padding: 16px 36px;
+}
+.header .container {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  height: -moz-fit-content;
+  height: fit-content;
+  align-items: center;
+}
+.header img {
+  width: 80px;
+  cursor: pointer;
+}
+
+.links {
+  align-content: center;
+  font-weight: 300;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.links ul {
+  display: flex;
+  flex-direction: row;
+  gap: 64px;
+}
+
+@media screen and (max-width: 375px) {
+  li, span, h3 {
+    font-size: 16px;
+  }
+  .header {
+    padding: 0;
+  }
+  .header .container {
+    /* border: 1px solid white; */
+    flex-direction: column;
+    padding: 0;
+  }
+  .header .logo {
+    /* border: 1px solid white; */
+    align-self: start;
+    margin: 15px;
+  }
+  .header .links {
+    width: 100%;
+  }
+  .header .links ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0;
+  }
+  .header .links ul li {
+    border: 1px solid white;
+    margin-right: 0;
+    text-align: center;
+    width: 50%;
+    padding: 12px 0;
+  }
+  .fs-sm-16 {
+    font-size: 16px;
+  }
+}
+/* footer  */
+.footer {
+  bottom: 0;
+  width: 100%;
+  padding-top: 48px;
+  padding-bottom: 32px;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: space-between;
+  /* border: 1px solid yellow; */
+  align-items: center;
+}
+
+.footer .list ul {
+  display: flex;
+  gap: 48px;
+  /* align-items: center; */
+}
+
+.footer .social-media ul {
+  display: flex;
+  gap: 32px;
+  /* border: 1px solid yellow; */
+}
+
+.footer .social-media ul img {
+  width: 48px;
+}
+
+.footer .contacts {
+  /* border: 1px solid yellow; */
+  margin-top: 24px;
+}
+
+.footer .contact {
+  display: flex;
+  align-items: center;
+  font-size: 36px;
+}
+
+.footer .contact h3 {
+  margin-left: 22px;
+  /* border: 1px solid yellow; */
+}
+
+.footer .divider {
+  border: 0.5px solid white;
+  width: 100%;
+  margin: 32px 0;
+}
+
+.footer .info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer .copyright {
+  font-size: 16px;
+}
+
+.footer .others {
+  font-size: 14px;
+}
+
+.footer .others span:nth-child(1) {
+  margin-right: 48px;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 0 36px;
+  }
+  .material-symbols-outlined {
+    font-size: 36px;
+  }
+  .contact-text {
+    font-size: 36px;
+  }
+  .footer {
+    padding-bottom: 40px;
+  }
+  .footer .social-media ul {
+    display: flex;
+    gap: 16px;
+  }
+  .footer .social-media ul img {
+    width: 40px;
+    margin-right: 0;
+  }
+}
+@media screen and (max-width: 375px) {
+  li, span, h3 {
+    font-size: 16px;
+  }
+  .fs-sm-16 {
+    font-size: 16px;
+  }
+  .footer {
+    padding: 24px 0;
+  }
+  .footer .container {
+    padding: 0 13px;
+  }
+  .material-symbols-outlined {
+    font-size: 18px;
+  }
+  .footer .social-media ul {
+    display: flex;
+    gap: 0;
+  }
+  .footer .footer-links .list {
+    display: none;
+  }
+  .footer .footer-links {
+    position: relative;
+  }
+  .footer .social-media {
+    /* border: 1px solid white; */
+    position: absolute;
+    top: 0;
+    margin-top: 24px;
+    right: 14px;
+  }
+  .footer .contacts {
+    width: 50%;
+  }
+  .footer .footer-links .social-media img {
+    /* border: 1px solid white; */
+    width: 24px;
+  }
+  .footer .social-media ul img {
+    margin-right: 8px;
+  }
+  .footer .social-media ul li:last-child img {
+    margin-right: 0;
+  }
+  .footer .contact h3 {
+    margin-left: 11px;
+  }
+  .footer .contact i {
+    font-size: 18px;
+  }
+  .footer .info {
+    /* border: 1px solid white; */
+    flex-direction: column;
+  }
+  .footer .others span {
+    display: block;
+  }
+  .footer .others span:nth-child(1) {
+    padding: 8px 0;
+  }
+}
+.index-bg-1 {
+  background-image: url("https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/home-header.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.index-bg-2 {
+  background-image: url("https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/index-bg.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.advantage-logo-1 {
+  background-image: url("https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/home-section2-1.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.advantage-logo-2 {
+  background-image: url("https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/home-section2-2.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.advantage-logo-3 {
+  background-image: url("https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/home-section2-3.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.advantage-logo-4 {
+  background-image: url("https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/home-sectioin2-4.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.classic-designs-category-logo-1 {
+  background-image: url("https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/home-section3-1.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.classic-designs-category-logo-2 {
+  background-image: url("https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/home-section3-2.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.classic-designs-category-logo-3 {
+  background-image: url("https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/home-section3-3.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.feat-design-logo-1 {
+  background-image: url("https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/home-section4-1-sm.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.feat-design-logo-2 {
+  background-image: url("https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/home-section4-2-sm.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.recommend-logo-1 {
+  background-image: url("https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/home-section5-1.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.recommend-logo-2 {
+  background-image: url("https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/home-section5-2.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.recommend-logo-3 {
+  background-image: url("https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/home-section5-3.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.recommend-logo-4 {
+  background-image: url("https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/home-section5-4.png");
+  background-position: center;
+  background-size: cover;
+}
+
+body {
+  color: #650300;
+}
+
+.title-red {
+  color: #650300;
+  text-align: center;
+}
+
+.text-black {
+  color: black;
+}
+
+.btn-red {
+  color: white;
+  background: #AA0601;
+  border: none;
+  cursor: pointer;
+}
+
+.bg-pink {
+  background: #FBF2F2;
+}
+
+.h-136 {
+  height: 136px;
+}
+
+.banner {
+  padding: 296px 0;
+}
+
+.text {
+  text-align: right;
+}
+
+.banner-btn {
+  padding: 6px 12px;
+}
+
+.advantages {
+  background: #FBF2F2;
+}
+
+.advantages .container {
+  text-align: center;
+  padding: 0 36px;
+}
+
+.advantage-group {
+  display: flex;
+  gap: 24px;
+}
+
+.advantage {
+  max-width: 306px;
+}
+
+.advantage p:nth-child(3) {
+  color: black;
+  text-align: start;
+}
+
+.advantage-logo {
+  margin: 0 auto;
+}
+
+.classic-designs .container {
+  text-align: center;
+}
+
+.classic-designs-categories {
+  display: flex;
+  gap: 24px;
+}
+
+.classic-designs-category {
+  width: 416px;
+  color: #AA0601;
+  font-style: italic;
+}
+
+.classic-designs-category-logo {
+  width: 100%;
+  height: 416px;
+}
+
+.advantage-logo {
+  width: 83px;
+  height: 83px;
+}
+
+.feat-designs-group {
+  display: flex;
+}
+
+.feat-design {
+  width: 50%;
+  background: white;
+  text-align: center;
+  color: #AA0601;
+  font-style: italic;
+}
+
+.feat-designs-title {
+  color: white;
+  text-align: center;
+}
+
+.feat-design-description {
+  padding: 8px 0;
+}
+
+.recommends-title {
+  color: #650300;
+  text-align: center;
+}
+
+.recommend {
+  width: 25%;
+  border-radius: 4px;
+  border: 1px solid #DEE2E6;
+  /* offset-x | offset-y | blur-radius | color */
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1607843137);
+}
+
+.recommend-date {
+  color: #707070;
+  font-size: 14px;
+}
+
+.recommends-group {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  color: black;
+}
+
+.recommend-info {
+  min-height: 205px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.contact-form {
+  max-width: 636px;
+  margin: 0 auto;
+}
+
+form {
+  color: black;
+}
+
+.conatct-btn {
+  text-align: center;
+}
+
+.contact-form-input {
+  display: block;
+  width: 100%;
+  margin-top: 8px;
+  margin-bottom: 16px;
+  height: 36px;
+  padding-left: 12px;
+  border: 1px solid black;
+  background: #FBF2F2;
+}
+
+.contact-form-btn {
+  padding: 16px 176px;
+}
+
+.feat-design-logo {
+  width: 100%;
+  height: 240px;
+}
+
+.recommend-logo {
+  width: 100%;
+  height: 306px;
+}
+
+@media screen and (max-width: 768px) {
+  li, span, h3 {
+    font-size: 16px;
+  }
+  .advantage-group {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .classic-designs-categories {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .feat-designs-group {
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+  .feat-design {
+    width: 100%;
+  }
+  .recommends-group {
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 24px;
+  }
+  .recommend {
+    width: calc(50% - 24px);
+    box-sizing: border-box;
+  }
+  .contact .container {
+    padding: 0 96px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .banner {
+    padding: 144px 0;
+  }
+  .banner .container {
+    padding: 0 16px;
+  }
+  .advantages .container, .feat-designs .container, .recommends .container, .contact .container {
+    padding: 0 13px;
+  }
+  .recommend {
+    width: 100%;
+    gap: 0;
+  }
+  .contact-form-btn {
+    padding: 16px 0;
+    width: 100%;
+  }
+}
+.header, .footer {
+  background: #AA0601;
+}
+
+a {
+  color: white;
+  display: block;
+  /* border: 1px solid yellow; */
+}
+
+h3, span, i {
+  color: white;
+}/*# sourceMappingURL=all.css.map */

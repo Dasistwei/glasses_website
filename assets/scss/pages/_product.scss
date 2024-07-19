@@ -1,0 +1,163 @@
+@each $number, $url in $product-logos{
+  .#{$number}{
+    background-image: url($url);
+    background-position: center;
+    background-size: cover;
+  }
+}
+.glasses-tabs .container{
+  // outline: 1px solid red;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+.glasses-tab-content{
+  display: none;
+}
+.glasses-tab{
+  width: 100%;
+  background: white; 
+  border: 1px solid #DCDCDC; 
+  display: block;
+  padding: 12px 0;
+}
+.glasses-tab:active{
+  border-bottom: 8px solid $red;
+}
+.active{
+  border-bottom: 8px solid $red;
+}
+.block{
+  display: block;
+}
+.glasses-tab-content-logos{
+  display: flex;
+}
+.glasses-tab-content-logo{
+  width: 50%;
+  height: 296px;
+}
+.glasses-tab-content-products .container{
+  text-align: center;
+  color: black;
+}
+.glasses-products-group{
+  // outline: 1px solid red;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 80px 24px;
+  justify-content: center;
+}
+.glasses-products-group-2 .glasses-product{
+  width: calc(33% - 24px);
+}
+.glasses-product{
+  // outline: 1px solid red;
+  width: calc(25% - 24px);
+}
+.glasses-product-logo{
+  height: 168px;
+}
+.glasses-products-group-2 .glasses-product-logo{
+  height: 224px;
+}
+.glasses-product-prices{
+  display: flex;
+  justify-content: space-between;
+  font-size: 24px;
+}
+.glasses-product-prices p:nth-child(2){
+  color: $red;
+  font-weight: 500;
+}
+.glasses-product-colors{
+  display: flex;
+  gap: 8px;
+}
+.glasses-product-color{
+  border-radius: 4px;
+  width: 24px;
+  height: 24px;
+}
+.glasses-product-color:nth-child(1){
+  background: #5F3E2D;
+}
+.glasses-product-color:nth-child(2){
+  background: #B75929;
+}
+.glasses-pages .container{
+  display: flex;
+  justify-content: center;
+  padding-bottom: 80px;
+}
+.paginate-group{
+  border: 1px solid #555555;
+  display: flex;
+}
+.paginate-a{
+  border: 1px solid #555555;
+  color: black;
+  font-size: 18px;
+  padding: 12px 16px;
+}
+.paginate-a:active{
+  background: black;
+  color: white;
+}
+.last-page, .next-page{
+  padding: 12px 12px;
+}
+.last-page:hover, .next-page:hover{
+  background: #F2F2F2;
+}
+.last-page:active, .next-page:active{
+  background: #F2F2F2;
+  color: black;
+}
+
+@media screen and (max-width: 768px) {
+  .glasses-tab{
+    padding: 16px 0;
+  }
+  .glasses-products-group{
+    justify-content: space-between;
+    gap: 40px 0;
+  }
+  .glasses-product{
+    width: calc(50% - 12px);
+    // width: 50%;
+  }
+}
+@media screen and (max-width: 375px) {
+  .glasses-tab{
+    padding: 16px 0;
+  }
+  .glasses-tab-content-logo{    
+    height: 136px;
+  }
+  .glasses-tab-content-products .container{
+    padding: 0 13px;
+  }
+  .glasses-tab-content-products{
+    padding-bottom: 64px;
+  }
+  .glasses-products-group{
+    gap: 24px 0;
+  }
+  .glasses-products-group-2 .glasses-product{
+    width: 100%;
+  }
+  .glasses-product{
+    width: 100%;
+  }
+  .glasses-pages{
+    padding-bottom: 64px;
+  }
+  .glasses-pages .container{
+    padding: 0 13px;
+  }
+  .paginate-a{
+    font-size: 16px;
+    padding: 12px;
+  }
+}

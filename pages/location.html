@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+<body>
+  <%- include('./layout/header.ejs'); %>
+  <div class="locations">
+    <div class="container p-0 p-md-36">
+      <div class="locations-title mb-32">
+        <h2 class="fs-48 fs-sm-24 fw-bold ml-16">門市據點</h2>
+      </div>
+      <div class="location-details">
+        <div class="location-select mb-40 mb-sm-24">
+          <h3 class="text-black fs-24 fs-sm-16">選擇分店</h3>
+          <div class="location-select-menu">
+            <select name="" id="" class="location-selector">
+              <option value="台北中山旗艦店">台北中山旗艦店</option>
+              <option value="台北綠園店">台北綠園店</option>
+            </select>
+          </div>
+        </div>
+        <div class="location-detail-group">
+          <div class="location-detail location-page">
+            <div class="location-logo location-logo-1 location-page-logo"></div>
+            <div class="location-page-text">
+              <h3 class="store-name fs-24 fs-sm-24 text-black">台北中山旗艦店</h3>
+              <div class="store-infos">
+                <div class="store-info">
+                  <div class="store-info-icon">
+                    <span class="material-symbols-outlined icon-black">
+                      call
+                    </span>
+                  </div>
+                  <p class="fs-20">電話：(02)000-1234</p>
+                </div>
+                <div class="store-info">
+                  <div class="store-info-icon">
+                    <span class="material-symbols-outlined icon-black">
+                      schedule
+                    </span>
+                  </div>                
+                  <p class="fs-20">營業時間：10:00-21:00</p>
+                </div>
+                <div class="store-info">
+                  <div class="store-info-icon">
+                    <span class="material-symbols-outlined icon-black">
+                      location_on
+                    </span>
+                  </div>
+                  <p class="fs-20">地址：台北市中山區南京東路25巷2-1號</p>
+                </div>
+              </div>
+              <button class="store-more-info d-none">詳細資訊</button>
+            </div>
+          </div>
+          <!-- <div class="location-detail location-page">
+            <div class="location-logo location-logo-2 location-page-logo"></div>
+            <div class="location-page-text">
+              <h3 class="store-name fs-24 fs-sm-24 text-black">台北綠園店</h3>
+              <div class="store-infos">
+                <div class="store-info">
+                  <div class="store-info-icon">
+                    <span class="material-symbols-outlined icon-black">
+                      call
+                    </span>
+                  </div>
+                  <p class="fs-20">電話：(02)000-1234</p>
+                </div>
+                <div class="store-info">
+                  <div class="store-info-icon">
+                    <span class="material-symbols-outlined icon-black">
+                      schedule
+                    </span>
+                  </div>                
+                  <p class="fs-20">營業時間：10:00-21:00</p>
+                </div>
+                <div class="store-info">
+                  <div class="store-info-icon">
+                    <span class="material-symbols-outlined icon-black">
+                      location_on
+                    </span>
+                  </div>
+                  <p class="fs-20">地址：台北市中山區南京東路25巷2-1號</p>
+                </div>
+              </div>
+              <button class="store-more-info d-none">詳細資訊</button>
+            </div>
+          </div> -->
+          <div class="location-map"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <%- include('./layout/footer.ejs'); %>
+
+  <script type="module" src="../main.js"></script>
+  <!-- TODO:fix location-page css -->
+  <!-- <script>
+    const selector = document.querySelector('.location-selector')
+    const locations = document.querySelectorAll('.location-page')
+    for (const location of locations) {
+      if(location.querySelector('.store-name').innerText !== selector.value){
+        location.style.display = "none"
+      }
+    }
+    selector.addEventListener('change', ()=>{
+      for (const location of locations) {
+        if(location.querySelector('.store-name').innerText !== selector.value){
+          location.style.display = "none"
+        }else{
+          console.log('bl', location)
+          location.style.display = "block"
+        }
+      }
+    })
+  </script> -->
+</body>
+</html>

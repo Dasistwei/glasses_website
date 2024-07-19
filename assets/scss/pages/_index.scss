@@ -1,0 +1,214 @@
+@each $number, $url in $index-logos{
+  .#{$number}{
+    background-image: url($url);
+    background-position: center;
+    background-size: cover;
+  }
+}
+body{
+  color: $dark-red;
+}
+.title-red{
+  color: $dark-red;
+  text-align: center;
+}
+.text-black{
+  color: black;
+}
+.btn-red{
+  color: white;
+  background: $red;
+  border: none;
+  cursor: pointer;
+}
+.bg-pink{
+  background: $pink;
+}
+.h-136{
+  height: 136px;
+}
+.banner{
+  padding: 296px 0;
+}
+
+.text{
+  text-align: right;
+}
+.banner-btn{
+  padding: 6px 12px;
+}
+.advantages{
+  background: $pink;
+}
+.advantages .container{
+  text-align: center;
+  padding: 0 36px;
+}
+.advantage-group{
+  display: flex;
+  gap: 24px;
+}
+.advantage{
+  max-width: 306px;
+}
+.advantage p:nth-child(3){
+  color: black;
+  text-align: start;
+}
+.advantage-logo{
+  margin: 0 auto;
+}
+.classic-designs .container{
+  text-align: center;
+}
+.classic-designs-categories{
+  display: flex;
+  // flex-wrap: wrap;
+  gap: 24px;
+}
+.classic-designs-category{
+  width: 416px;
+  color: $red;
+  font-style: italic;
+}
+.classic-designs-category-logo{
+  width: 100%;
+  height: 416px;  
+}
+.advantage-logo{
+  width: 83px; 
+  height: 83px;  
+}
+.feat-designs-group{
+  display: flex;
+}
+.feat-design{
+  width: 50%;
+  // width: 100%;
+  background: white;
+  text-align: center;
+  color: $red;
+  font-style: italic;
+}
+.feat-designs-title{
+  color: white;
+  text-align: center;
+}
+.feat-design-description{
+  padding: 8px 0;
+}
+.recommends-title{
+  color: $dark-red;
+  text-align: center;
+}
+.recommend{
+  // max-width: 306px;
+  width: 25%;
+  border-radius: 4px;
+  border: 1px solid #DEE2E6;
+  /* offset-x | offset-y | blur-radius | color */
+  box-shadow: 0px 2px 6px #00000029;
+}
+.recommend-date{
+  color: #707070;
+  font-size: 14px;
+}
+.recommends-group{
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  color: black;
+}
+.recommend-info{
+  // outline: solid blue;
+  min-height: 205px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.contact-form{
+  max-width: 636px;
+  margin: 0 auto;
+}
+form{
+  color: black;
+}
+.conatct-btn{
+  text-align: center;
+}
+.contact-form-input{
+  display: block;
+  width: 100%;
+  margin-top: 8px;
+  margin-bottom: 16px;
+  height: 36px;
+  padding-left: 12px;
+  border: 1px solid black;
+  background: $pink;
+}
+.contact-form-btn{
+  padding: 16px 176px;
+}
+.feat-design-logo{
+  width: 100%; 
+  height: 240px;
+}
+.recommend-logo{
+  width: 100%; 
+  height: 306px;
+}
+
+@media screen and (max-width: 768px) {
+  li, span, h3{
+    font-size: 16px;
+  }
+  .advantage-group{
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .classic-designs-categories{
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .feat-designs-group{
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+  .feat-design{
+    width: 100%;
+  }
+  .recommends-group{
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+  .recommend{
+    width: calc(50% - 24px);
+    box-sizing: border-box;
+  }
+  .contact .container{
+    padding: 0 96px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .banner{
+    // outline: 10px solid blue;
+    padding: 144px 0;
+  }
+  .banner .container{
+    padding: 0 16px;
+  }
+  .advantages .container, .feat-designs .container, .recommends .container, .contact .container{
+    // outline: 10px solid blue;
+    padding: 0 13px;
+  }
+  .recommend{
+    width: 100%;
+    gap: 0;
+  }
+  .contact-form-btn{
+    padding: 16px 0;
+    width: 100%;
+  }
+}
