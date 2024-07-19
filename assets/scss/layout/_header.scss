@@ -8,9 +8,11 @@
     height: fit-content;
     align-items: center;
   }
-  img{
+  .main-logo{
+    background-image: url("https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/logo-white.png");
+    background-size: cover;
     width: 80px;
-    cursor: pointer;
+    height: 50px;
   }
 }
 .links{
