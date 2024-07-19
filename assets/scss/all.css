@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -87,8 +88,16 @@ body {
   font-size: 24px;
 }
 
+.fs-32 {
+  font-size: 32px;
+}
+
 .fs-36 {
   font-size: 36px;
+}
+
+.fs-42 {
+  font-size: 42px;
 }
 
 .fs-48 {
@@ -111,6 +120,10 @@ body {
   font-weight: 500;
 }
 
+.ml-16 {
+  margin-left: 16px;
+}
+
 .mr-4 {
   margin-right: 4px;
 }
@@ -131,6 +144,14 @@ body {
   margin-bottom: 24px;
 }
 
+.mb-32 {
+  margin-bottom: 32px;
+}
+
+.mb-40 {
+  margin-bottom: 40px;
+}
+
 .mb-48 {
   margin-bottom: 48px;
 }
@@ -139,6 +160,23 @@ body {
   padding: 80px 0;
 }
 
+.btn-hover {
+  padding: 10px;
+}
+
+.btn-hover:hover {
+  background: #e74d42;
+}
+
+.cursor-p {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .fs-md-24 {
+    font-size: 24px;
+  }
+}
 @media screen and (max-width: 375px) {
   .fs-sm-16 {
     font-size: 16px;
@@ -677,8 +715,8 @@ form {
     width: 100%;
   }
   .recommends-group {
-    flex-wrap: wrap;
     width: 100%;
+    flex-wrap: wrap;
     gap: 24px;
   }
   .recommend {
@@ -706,6 +744,469 @@ form {
   .contact-form-btn {
     padding: 16px 0;
     width: 100%;
+  }
+}
+.glasses-tab-content-logo-1 {
+  background-image: url("https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/product-header-1.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.glasses-tab-content-logo-2 {
+  background-image: url("https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/product-header-2.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.glasses-tab-content-logo-3 {
+  background-image: url("https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/product-header-3.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.glasses-tab-content-logo-4 {
+  background-image: url("https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/product-header-4.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.glasses-product-logo-1 {
+  background-image: url("https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/product-1.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.glasses-product-logo-2 {
+  background-image: url("https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/product-2.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.glasses-product-logo-3 {
+  background-image: url("https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/product-3.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.glasses-product-logo-4 {
+  background-image: url("https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/product-4.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.glasses-product-logo-5 {
+  background-image: url("https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/product-5.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.glasses-product-logo-6 {
+  background-image: url("https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/product-6.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.glasses-product-logo-7 {
+  background-image: url("https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/product-7.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.glasses-product-logo-8 {
+  background-image: url("https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/product-8.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.glasses-product-logo-9 {
+  background-image: url("https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/product-9.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.glasses-product-logo-10 {
+  background-image: url("https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/product-10.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.glasses-product-logo-11 {
+  background-image: url("https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/product-11.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.glasses-product-logo-12 {
+  background-image: url("https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/product-12.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.glasses-tabs .container {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+
+.glasses-tab-content {
+  display: none;
+}
+
+.glasses-tab {
+  width: 100%;
+  background: white;
+  border: 1px solid #DCDCDC;
+  display: block;
+  padding: 12px 0;
+}
+
+.glasses-tab:active {
+  border-bottom: 8px solid #AA0601;
+}
+
+.active {
+  border-bottom: 8px solid #AA0601;
+}
+
+.block {
+  display: block;
+}
+
+.glasses-tab-content-logos {
+  display: flex;
+}
+
+.glasses-tab-content-logo {
+  width: 50%;
+  height: 296px;
+}
+
+.glasses-tab-content-products .container {
+  text-align: center;
+  color: black;
+}
+
+.glasses-products-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 80px 24px;
+  justify-content: center;
+}
+
+.glasses-products-group-2 .glasses-product {
+  width: calc(33% - 24px);
+}
+
+.glasses-product {
+  width: calc(25% - 24px);
+}
+
+.glasses-product-logo {
+  height: 168px;
+}
+
+.glasses-products-group-2 .glasses-product-logo {
+  height: 224px;
+}
+
+.glasses-product-prices {
+  display: flex;
+  justify-content: space-between;
+  font-size: 24px;
+}
+
+.glasses-product-prices p:nth-child(2) {
+  color: #AA0601;
+  font-weight: 500;
+}
+
+.glasses-product-colors {
+  display: flex;
+  gap: 8px;
+}
+
+.glasses-product-color {
+  border-radius: 4px;
+  width: 24px;
+  height: 24px;
+}
+
+.glasses-product-color:nth-child(1) {
+  background: #5F3E2D;
+}
+
+.glasses-product-color:nth-child(2) {
+  background: #B75929;
+}
+
+.glasses-pages .container {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 80px;
+}
+
+.paginate-group {
+  border: 1px solid #555555;
+  display: flex;
+}
+
+.paginate-a {
+  border: 1px solid #555555;
+  color: black;
+  font-size: 18px;
+  padding: 12px 16px;
+}
+
+.paginate-a:active {
+  background: black;
+  color: white;
+}
+
+.last-page, .next-page {
+  padding: 12px 12px;
+}
+
+.last-page:hover, .next-page:hover {
+  background: #F2F2F2;
+}
+
+.last-page:active, .next-page:active {
+  background: #F2F2F2;
+  color: black;
+}
+
+@media screen and (max-width: 768px) {
+  .glasses-tab {
+    padding: 16px 0;
+  }
+  .glasses-products-group {
+    justify-content: space-between;
+    gap: 40px 0;
+  }
+  .glasses-product {
+    width: calc(50% - 12px);
+  }
+}
+@media screen and (max-width: 375px) {
+  .glasses-tab {
+    padding: 16px 0;
+  }
+  .glasses-tab-content-logo {
+    height: 136px;
+  }
+  .glasses-tab-content-products .container {
+    padding: 0 13px;
+  }
+  .glasses-tab-content-products {
+    padding-bottom: 64px;
+  }
+  .glasses-products-group {
+    gap: 24px 0;
+  }
+  .glasses-products-group-2 .glasses-product {
+    width: 100%;
+  }
+  .glasses-product {
+    width: 100%;
+  }
+  .glasses-pages {
+    padding-bottom: 64px;
+  }
+  .glasses-pages .container {
+    padding: 0 13px;
+  }
+  .paginate-a {
+    font-size: 16px;
+    padding: 12px;
+  }
+}
+.location-logo-1 {
+  background-image: url("https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/store-1.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.location-logo-2 {
+  background-image: url("https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/store-2.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.location-logo-3 {
+  background-image: url("https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/store-3.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.location-logo-4 {
+  background-image: url("https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/store-4.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.location-logo-5 {
+  background-image: url("https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/store-5.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.locations {
+  padding-top: 96px;
+  padding-bottom: 80px;
+  color: black;
+}
+
+.locations-title {
+  border-left: 8px solid #AA0601;
+}
+
+.location-select {
+  display: flex;
+  gap: 16px;
+}
+
+.location-selector {
+  /*移除箭頭樣式*/
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  background: url("../images/arrow_drop_down_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg") no-repeat right center transparent;
+  width: 304px;
+  padding: 6px 0px 6px 12px;
+  color: #495057;
+  font-size: 18px;
+}
+
+.location-detail-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: space-between;
+}
+
+.location-detail {
+  width: calc(33.333% - 24px);
+}
+
+.location-logo {
+  height: 224px;
+}
+
+.text-black {
+  color: black;
+}
+
+.store-name, .store-infos {
+  border: 1px solid rgba(0, 0, 0, 0.1254901961);
+}
+
+.store-name {
+  padding: 8px 24px;
+}
+
+.store-infos {
+  padding: 16px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px 0;
+}
+
+.store-info {
+  display: flex;
+  gap: 0 8px;
+}
+
+.icon-black {
+  color: black;
+}
+
+.store-more-info {
+  width: 100%;
+  border: none;
+  background: black;
+  color: white;
+  cursor: pointer;
+  font-size: 19px;
+  padding: 16px 0;
+}
+
+.store-more-info:hover {
+  background: rgb(80, 78, 78);
+}
+
+@media screen and (max-width: 768px) {
+  .location-detail {
+    width: calc(50% - 12px);
+  }
+}
+@media screen and (max-width: 375px) {
+  .locations {
+    padding-top: 40px;
+    padding-bottom: 64px;
+  }
+  .locations .container {
+    padding: 0 13px;
+  }
+  .location-select {
+    gap: 8px;
+  }
+  .location-selector {
+    width: 276px;
+  }
+  .location-detail {
+    width: 100%;
+  }
+  .location-detail-group {
+    gap: 24 0;
+  }
+}
+.p-0 {
+  padding: 0;
+}
+
+.d-none {
+  display: none;
+}
+
+.location-page {
+  width: 40.5864197531%;
+}
+
+.location-map {
+  background-image: url("../images/location_map.png");
+  background-position: center;
+  background-size: cover;
+  width: 57.5617283951%;
+  height: 414px;
+}
+
+@media screen and (max-width: 768px) {
+  .p-md-36 {
+    padding: 0 36px;
+  }
+  .location-page {
+    width: 100%;
+    display: flex;
+    gap: 24px;
+  }
+  .location-page-logo, .location-page-text {
+    width: 50%;
+    height: 100%;
+  }
+  .location-map {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 375px) {
+  .location-page {
+    flex-direction: column;
+    gap: 0;
+  }
+  .location-page-logo, .location-page-text {
+    width: 100%;
+  }
+  .location-page-logo {
+    min-height: 224px;
   }
 }
 .header, .footer {
