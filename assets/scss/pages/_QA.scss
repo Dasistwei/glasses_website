@@ -1,0 +1,21 @@
+.QA-page{
+  padding: 96px 0 80px 0;
+  color: black;
+  max-width: 856px;
+}
+.QAs{
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+@media screen and (max-width: 375px) {
+  .QA-page{
+    padding: 40px 0 64px 0;
+  }
+  .m-sm-13{
+    padding: 0 13px;
+  }
+  .QAs{
+    gap: 24px;
+  }
+}

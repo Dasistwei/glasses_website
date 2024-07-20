@@ -19,6 +19,7 @@
 .fs-64{
   font-size: 64px;
 }
+// fw
 .fw-bold{
   font-weight: 700;
 }
@@ -28,20 +29,26 @@
 .fw-medium{
   font-weight: 500;
 }
+
 .ml-16{
   margin-left: 16px;
 }
 .mr-4{
   margin-right: 4px;
 }
+// mt
+.mt-16{
+  margin-top: 16px;
+}
+.mt-32{
+  margin-top: 32px;
+}
+// mb
 .mb-4{
   margin-bottom: 4px;
 }
 .mb-8{
   margin-bottom: 8px;
-}
-.mt-16{
-  margin-top: 16px;
 }
 .mb-24{
   margin-bottom: 24px;
