@@ -80,13 +80,13 @@ font-size: 18px;
 .store-more-info:hover{
   background: rgb(80, 78, 78);
 }
-@media screen and (max-width: 768px){
+@media screen and (max-width: 992px){
   .location-detail{
     // outline: 1px solid red;
     width: calc(50% - 12px);
   } 
 }
-@media screen and (max-width: 375px){
+@media screen and (max-width: 767px){
   .locations{
     padding-top: 40px;
     padding-bottom: 64px;

@@ -388,20 +388,7 @@
       </div>
     </div>
   </div>
-
-  <div class="glasses-pages">
-    <div class="container">
-      <ul class="paginate-group">
-        <li><a href="#" class="paginate-a last-page">上一頁</a></li>
-        <li><a href="#" class="paginate-a">1</a></li>
-        <li><a href="#" class="paginate-a">2</a></li>
-        <li><a href="#" class="paginate-a">3</a></li>
-        <li><a href="#" class="paginate-a">4</a></li>
-        <li><a href="#" class="paginate-a">5</a></li>
-        <li><a href="#" class="paginate-a next-page">下一頁</a></li>
-      </ul>
-    </div>
-  </div>
+  <%- include('./layout/paginate.ejs'); %>
   <%- include('./layout/footer.ejs'); %>
   <script type="module" src="../main.js"></script>
 </body>

@@ -1,0 +1,110 @@
+@each $number, $url in $blog-logos{
+  .#{$number}{
+    background-image: url($url);
+    background-position: center;
+    background-size: cover;
+  }
+}
+.ac-c{
+  align-content: center;
+}
+.h-40{
+  height: 40px;
+}
+.nav{
+  padding: 13px 0;
+  .container{
+    width: 100%;
+  }
+}
+.search-icon{
+  height: 40px;
+}
+.blog{
+  padding: 96px 0 124px 0;
+}
+.blog-list{
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+.blog-article{
+  display: flex;  
+  gap: 24px;
+  position: relative;
+}
+.article-title{
+  color: $dark-red;
+}
+.blog-article-logo{
+  width: 50%;
+  height: 400px;
+  // height: 20%;
+}
+.blog-article-content{
+  width: 50%;
+  color: black;
+}
+.article-btn{
+  border: none;
+  background: none;
+  color: $dark-red;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+@media screen and (max-width: 992px) {
+  .blog{
+    padding-bottom: 80px;
+  }
+  .blog-article-logo{
+    height: 208px;
+  }
+  .blog-list{
+    gap: 24px;
+  }
+  .article-btn{
+    color: black;
+    font-weight: normal;
+    font-size: 16px;
+    display: inline;
+  }
+  .article-btn span {
+    display: none;
+  }
+  .article-btn:after {
+    content: 'more';
+  }
+}
+@media screen and (max-width: 767px) {
+  .nav{
+    display: none;
+  }
+  .plr-md-12{
+    padding: 0 12px;
+  }
+  .blog{
+    padding-top: 40px;
+    padding-bottom: 64px;
+  }
+  .blog-list{
+    margin-top: 0;
+  }
+  .blog-article{
+    flex-direction: column;
+    gap: 8px;
+  }
+  .blog-article-logo{
+    width: 100%;
+    // height: 400px;
+  }
+  .blog-article-content{
+    width: 100%;
+  }
+  .md-ellipsis{
+    display: none;
+  }
+  .article-btn{
+    display: none;
+  }
+}

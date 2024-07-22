@@ -57,7 +57,7 @@
   margin-right: 48px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
   .container{
     // outline: 1px solid white;
     padding: 0 36px;
@@ -86,7 +86,7 @@
     margin-right: 0;
   }  
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 767px) {
   li, span, h3{
     font-size: 16px;
   }

@@ -8,7 +8,69 @@
 </head>
 <body>
   <%- include('./layout/header.ejs'); %>
-  <p>Hello Vite!</p>
+  <%- include('./layout/nav.ejs'); %>
+  <div class="bookmarks mt-24">
+    <div class="container">
+      <ul class="d-flex text-black mb-8">
+        <li class="bookmark-link cursor-p">首頁</li>
+        <li class="bookmark-link cursor-p slash">部落格</li>
+        <li class="bookmark-link cursor-p slash">特別企劃</li>
+        <li class="bookmark-link cursor-p slash">情人特別企劃</li>
+      </ul>
+      <div class="hashTags d-flex fs-24 fw-bold gap-15 text-red mb-8">
+        <P>#special</P>
+        <P>#event</P>
+      </div>
+    </div>
+  </div>
+  <div class="event-content">
+    <div class="container d-flex gap-24">
+      <div class="event-article text-black">
+        <h4 class="fs-48">情人特別企劃</h4>
+        <p class="fs-24 fw-medium mb-16">2020 Valentine’s Special</p>
+        <div class="event-texts">
+          <div class="event-text">
+             <img class="event-logo mb-8" src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/blogpage-1.png" alt="blogpage-1.png">
+            <p class="mb-40">一年一度西洋情人節即將到來，我們推出最強「情人節企劃」，為這個甜蜜的節日加溫。 本次拍攝的鏡框款式與 NEEDS CLASSIC 聯名設計款，偶爾跟另一半來個低調情侶單品，結合彼此喜好、找出合適框型款式，在這個春夏輕鬆搭出屬於你們的甜蜜默契！</p>
+          </div>
+          <div class="event-text">
+             <img class="event-logo mb-8" src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/blogpage-2.png" alt="blogpage-2.png">
+            <p class="mb-40">一年一度西洋情人節即將到來，我們推出最強「情人節企劃」，為這個甜蜜的節日加溫。 本次拍攝的鏡框款式與 NEEDS CLASSIC 聯名設計款，偶爾跟另一半來個低調情侶單品，結合彼此喜好、找出合適框型款式，在這個春夏輕鬆搭出屬於你們的甜蜜默契！</p>
+          </div>
+          <div class="event-text">
+             <img class="event-logo mb-8" src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/blogpage-3.png" alt="blogpage-3.png">
+            <p class="mb-40">一年一度西洋情人節即將到來，我們推出最強「情人節企劃」，為這個甜蜜的節日加溫。 本次拍攝的鏡框款式與 NEEDS CLASSIC 聯名設計款，偶爾跟另一半來個低調情侶單品，結合彼此喜好、找出合適框型款式，在這個春夏輕鬆搭出屬於你們的甜蜜默契！</p>
+          </div>
+          <div class="event-text">
+             <img class="event-logo mb-8" src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/blogpage-4.png" alt="blogpage-4.png">
+            <p class="mb-40">一年一度西洋情人節即將到來，我們推出最強「情人節企劃」，為這個甜蜜的節日加溫。 本次拍攝的鏡框款式與 NEEDS CLASSIC 聯名設計款，偶爾跟另一半來個低調情侶單品，結合彼此喜好、找出合適框型款式，在這個春夏輕鬆搭出屬於你們的甜蜜默契！</p>
+          </div>
+        </div>
+        <div class="event-solcials"></div>
+        <div class="event-paginate">
+          <span class="event-last-page event-paginate"></span>
+          <span class="event-next-page event-paginate"></span
+        ></div>
+      </div>
+      <div class="event-tags text-red">
+        <div class="event-tags-title d-flex gap-8">
+          <span class="material-symbols-outlined event-tags-title-icon">
+            label
+          </span>
+          <h4 class="fs-32 fw-bold">TAGS</h4>
+        </div>
+        <div class="event-tags-group d-flex fs-24 fw-bold">
+          <span class="text-red">#special</span>
+          <span class="text-red">#sale</span>
+          <span class="text-red">#new_item</span>
+          <span class="text-red">#interview</span>
+          <span class="text-red">#trivia</span>
+          <span class="text-red">#news</span>
+          <span class="text-red">#event</span>
+        </div>
+      </div>
+    </div>
+  </div>
   <%- include('./layout/footer.ejs'); %>
 
   <script type="module" src="../main.js"></script>

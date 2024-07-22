@@ -117,7 +117,7 @@
   color: black;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
   .glasses-tab{
     padding: 16px 0;
   }
@@ -130,7 +130,7 @@
     // width: 50%;
   }
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 767px) {
   .glasses-tab{
     padding: 16px 0;
   }

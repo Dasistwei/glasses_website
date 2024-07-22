@@ -42,34 +42,41 @@ q:before, q:after {
 	content: '';
 	content: none;
 }
-//自定義
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+//自定義
+body{
+	font-family: 'Roboto', 'Noto Sans TC', 'Microsoft JhengHei',sans-serif;
+	line-height: 1.5;
+}
 *,*::before, *::after{
 	box-sizing: border-box;
-}
-img{
-  max-width: 100%;
-  vertical-align: middle;
-  height: auto;
 }
 a{
   text-decoration: none;
 	color: inherit;
+	display: inline-block;
 }
-body{
-	line-height: 1.5;
+img{
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
 }
 .container{
+  max-width: 1320px; //1296 + 24px
   margin: 0 auto;
   padding: 0 12px;
-  max-width: 1296px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
 	.container{
-		// padding: 0 12px;
-		// padding: 0;
+		max-width: 720px;
+	}
+}
+@media screen and (max-width: 767px) {
+	.container{
+		max-width: 372px;
 	}
 }

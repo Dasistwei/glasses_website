@@ -1,5 +1,6 @@
 .header{
-  padding: 16px 36px;
+  // padding: 16px 36px;
+  padding: 16px 0;
   .container{
     box-sizing: border-box;
     display: flex;
@@ -27,9 +28,12 @@
 }
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
+  .container{
+    max-width: 1320px; //1296 + 24px
+  }
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 767px) {
   li, span, h3{
     font-size: 16px;
   }
@@ -38,6 +42,7 @@
   }
   .header .container{
     /* border: 1px solid white; */
+    // border: 1px solid white;
     flex-direction: column;
     padding: 0;
   }
@@ -46,7 +51,7 @@
     align-self: start;
     margin: 15px;
   }
-  .header .links{
+  .header .links{    
     width: 100%;
   }
   .header .links ul{
@@ -62,7 +67,4 @@
     width: 50%;
     padding: 12px 0;
   } 
-  .fs-sm-16{
-    font-size: 16px;
-  }
 }

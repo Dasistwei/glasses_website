@@ -27,12 +27,14 @@ body{
 .h-136{
   height: 136px;
 }
-.banner{
-  padding: 296px 0;
+.banner, .text{
+  // padding: 296px 0;
+  height: calc(100vh - 80px);
 }
-
 .text{
+  // outline: 1px solid red;
   text-align: right;
+  align-content: center;
 }
 .banner-btn{
   padding: 6px 12px;
@@ -42,14 +44,13 @@ body{
 }
 .advantages .container{
   text-align: center;
-  padding: 0 36px;
 }
 .advantage-group{
   display: flex;
   gap: 24px;
 }
 .advantage{
-  max-width: 306px;
+  width: 25%;
 }
 .advantage p:nth-child(3){
   color: black;
@@ -62,12 +63,14 @@ body{
   text-align: center;
 }
 .classic-designs-categories{
+  // outline: 5px solid red;
   display: flex;
+  // justify-content: space-between;
   // flex-wrap: wrap;
   gap: 24px;
 }
 .classic-designs-category{
-  width: 416px;
+  width: 33.333%;
   color: $red;
   font-style: italic;
 }
@@ -159,7 +162,10 @@ form{
   height: 306px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
+  .banner{
+    height: calc(100vh - 80px);
+  }
   li, span, h3{
     font-size: 16px;
   }
@@ -167,9 +173,20 @@ form{
     flex-wrap: wrap;
     justify-content: center;
   }
+  .advantage{
+    width: calc(50% - 12px);
+  }
   .classic-designs-categories{
+    // outline: 3px solid red;
     justify-content: center;
     flex-wrap: wrap;
+  }
+  .classic-designs-category{
+    // outline: 3px solid red;
+    width: 336px;
+  }
+  .classic-designs-category-logo{
+    height: 336px;    
   }
   .feat-designs-group{
     flex-wrap: wrap;
@@ -191,10 +208,11 @@ form{
     padding: 0 96px;
   }
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 767px) {
   .banner{
     // outline: 10px solid blue;
-    padding: 144px 0;
+    // padding: 144px 0;
+    height: calc(100vh - 176px);
   }
   .banner .container{
     padding: 0 16px;

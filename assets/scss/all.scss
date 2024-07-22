@@ -4,9 +4,6 @@
 @import './utils/images';
 @import './utils/text';
 
-body{
-  font-family: $english-font, $mandrin-font, 'Microsoft JhengHei',sans-serif;
-}
 
 // layout
 @import './layout/header.scss';
@@ -18,14 +15,15 @@ body{
 @import './pages/locations.scss';
 @import './pages/location.scss';
 @import './pages/QA.scss';
+@import './pages/blog.scss';
+@import './pages/event.scss';
 
 .header, .footer{
   background: $red;
 }
 a{
   color: white;
-  display: block;
-  /* border: 1px solid yellow; */
+  
 }
 h3, span, i{
   color: white;
