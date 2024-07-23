@@ -1,0 +1,27 @@
+.row{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -12px;
+}
+.col-3{
+  // outline: 1px solid red;
+  width: 25%;
+  padding: 0 12px;
+}
+.col-4{
+  width: 33.333%;
+  padding: 0 12px;
+}
+@media screen and (max-width: 992px) {
+  .col-md-6{
+    width: 50%;
+  }
+  .col-md-12{
+    width: 100%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .col-sm-12{
+    width: 100%;
+  }
+}
