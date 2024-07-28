@@ -1,4 +1,4 @@
-<div class="footer">
+<div class="footer bg-red text-white">
   <div class="container">
     <div class="footer-links">
       <div class="list">
@@ -19,16 +19,17 @@
       </div>
     </div>
     <div class="contacts">
+      <!-- ; 底部電話、信箱也可加上 a 標籤與 hover 效果，並使用 a 標籤的 Emmet 語法 a:tel, a:mail，提升使用者體驗 -->
       <div class="contact">
-        <span class="material-symbols-outlined">
-          call
-          </span>
+        <a class="link-hover" href="mailto:">
+          <span class="material-symbols-outlined fs-36 fs-sm-18">call</span>
+        </a>
         <h3 class="contact-text fs-sm-16">0800-000-000</h3>
       </div>
       <div class="contact">
-        <span class="material-symbols-outlined">
-          mail
-        </span>
+        <a class="link-hover" href="tel:+">
+          <span class="material-symbols-outlined fs-36 fs-sm-18">mail</span>
+        </a>
         <h3 class="contact-text fs-sm-16">glasses@business.com</h3>
       </div>
     </div>

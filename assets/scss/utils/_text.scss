@@ -1,3 +1,10 @@
+@each $number, $url in $logos{
+  .#{$number}{
+    background-image: url("https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/" + $url);
+    background-position: center;
+    background-size: cover;
+  }
+}
 .fs-20{
   font-size: 20px;
 }
@@ -74,14 +81,26 @@
 .ptb-80{
   padding: 80px 0;
 }
+.text-white{
+  color: white;
+}
+.text-black{
+  color: black;
+}
 .text-red{
   color: $red;
+}
+.text-dark-red{
+  color: $dark-red;
 }
 .text-italic{
   font-style: italic;
 }
 .text-ac{
   text-align: center;
+}
+.link-hover:hover{
+  color: rgb(175, 180, 178);
 }
 .btn-hover{
   padding: 10px;
@@ -92,8 +111,15 @@
 .cursor-p{
   cursor: pointer;
 }
+// background
 .bg-dark-red{
   background: $dark-red;
+}
+.bg-red{
+  background: $red;
+}
+.bg-pink{
+  background: $pink;
 }
 .d-flex{
   display: flex;
@@ -117,6 +143,9 @@
   .fs-md-16{
     font-size: 16px;
   }
+  .fs-md-20{
+    font-size: 20px;
+  }
   .fs-md-24{
     font-size: 24px;
   }
@@ -135,6 +164,9 @@
 @media screen and (max-width: 767px) {
   .fs-sm-16{
     font-size: 16px;
+  }
+  .fs-sm-18{
+    font-size: 18px;
   }
   .fs-sm-24{
     font-size: 24px;

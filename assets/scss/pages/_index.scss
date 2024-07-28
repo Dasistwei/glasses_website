@@ -1,28 +1,12 @@
-@each $number, $url in $index-logos{
-  .#{$number}{
-    background-image: url($url);
-    background-position: center;
-    background-size: cover;
-  }
-}
-body{
-  color: $dark-red;
-}
 .title-red{
   color: $dark-red;
   text-align: center;
-}
-.text-black{
-  color: black;
 }
 .btn-red{
   color: white;
   background: $red;
   border: none;
   cursor: pointer;
-}
-.bg-pink{
-  background: $pink;
 }
 .h-136{
   height: 136px;
@@ -90,8 +74,6 @@ body{
   text-align: center;
 }
 .recommend{
-  // max-width: 306px;
-  // width: 25%;
   border-radius: 4px;
   border: 1px solid #DEE2E6;
   /* offset-x | offset-y | blur-radius | color */

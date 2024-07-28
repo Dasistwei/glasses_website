@@ -20,8 +20,8 @@
             </select>
           </div>
         </div>
-        <div class="location-detail-group">
-          <div class="location-detail">
+        <ul class="location-detail-group row">
+          <li class="location-detail col-4 col-md-6 col-sm-12 mb-48">
             <div class="location-logo location-logo-1"></div>
             <h3 class="store-name fs-24 fs-sm-24 text-black">台北中山旗艦店</h3>
             <div class="store-infos">
@@ -51,8 +51,8 @@
               </div>
             </div>
             <button class="store-more-info"><a href="location.html">詳細資訊</a></button>
-          </div>
-          <div class="location-detail">
+          </li>
+          <li class="location-detail col-4 col-md-6 col-sm-12 mb-48">
             <div class="location-logo location-logo-2"></div>
             <h3 class="store-name fs-24 fs-sm-24 text-black">台北綠園店</h3>
             <div class="store-infos">
@@ -82,8 +82,8 @@
               </div>
             </div>
             <button class="store-more-info"><a href="location.html">詳細資訊</a></button>
-          </div>
-          <div class="location-detail">
+          </li>
+          <li class="location-detail col-4 col-md-6 col-sm-12 mb-48">
             <div class="location-logo location-logo-3"></div>
             <h3 class="store-name fs-24 fs-sm-24 text-black">台中清水旗艦店</h3>
             <div class="store-infos">
@@ -113,8 +113,8 @@
               </div>
             </div>
             <button class="store-more-info"><a href="location.html">詳細資訊</a></button>
-          </div>
-          <div class="location-detail">
+          </li>
+          <li class="location-detail col-4 col-md-6 col-sm-12 mb-48">
             <div class="location-logo location-logo-4"></div>
             <h3 class="store-name fs-24 fs-sm-24 text-black">高雄中正形象店</h3>
             <div class="store-infos">
@@ -144,8 +144,8 @@
               </div>
             </div>
             <button class="store-more-info"><a href="location.html">詳細資訊</a></button>
-          </div>
-          <div class="location-detail">
+          </li>
+          <li class="location-detail col-4 col-md-6 col-sm-12 mb-48">
             <div class="location-logo location-logo-5"></div>
             <h3 class="store-name fs-24 fs-sm-24 text-black">高雄夢時代店</h3>
             <div class="store-infos">
@@ -175,26 +175,13 @@
               </div>
             </div>
             <button class="store-more-info"><a href="location.html">詳細資訊</a></button>
-          </div>
-        </div>
+          </li>
+        </ul>
       </div>
     </div>
   </div>
   <%- include('./layout/footer.ejs'); %>
 
   <script type="module" src="../main.js"></script>
-  <script>
-    const locations = document.querySelectorAll('.location-detail')
-    const locationGroup = document.querySelector('.location-detail-group')
-    const remainder = locations.length % 3
-
-    if(remainder !== 0){
-      for (let i = 1; i < remainder; i++) {
-        const newLocation = document.createElement("div")
-        newLocation.className = "location-detail";
-        locationGroup.appendChild(newLocation)        
-      }
-    }
-  </script>
 </body>
 </html>

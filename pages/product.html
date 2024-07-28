@@ -17,148 +17,43 @@
   </div>
   <div class="glasses-tab-content" id="OPTICAL">
     <!-- TODO:圖片比例 -->
-    <div class="glasses-tab-content-logos">
-      <div class="glasses-tab-content-logo glasses-tab-content-logo-1"></div>
-      <div class="glasses-tab-content-logo glasses-tab-content-logo-2"></div>
-    </div>
+    <ul class="glasses-tab-content-logos">
+      <li class="glasses-tab-content-logo glasses-tab-content-logo-1"></li>
+      <li class="glasses-tab-content-logo glasses-tab-content-logo-2"></li>
+    </ul>
     <div class="glasses-tab-content-products ptb-80 ptb-sm-40">
       <div class="container">
         <h2 class="fs-42 fs-sm-24 fw-medium">Celluloid Combi</h2>
         <p class="fs-32 fs-sm-24 mb-32 mb-sm-24">賽璐珞鈦金屬混合鏡框</p>
-        <div class="glasses-products-group">
-          <div class="glasses-product">
-            <div class="glasses-product-logo glasses-product-logo-1"></div>
-            <div class="glasses-product-prices">
-              <p>BJ41600S</p>
-              <p>NTD3,490</p>
-            </div>
-            <div class="glasses-product-colors">
-              <div class="glasses-product-color"></div>
-              <div class="glasses-product-color"></div>
-            </div>
-          </div>
-          <div class="glasses-product">
-            <div class="glasses-product-logo glasses-product-logo-2"></div>
-            <div class="glasses-product-prices">
-              <p>BJ41600S</p>
-              <p>NTD3,490</p>
-            </div>
-            <div class="glasses-product-colors">
-              <div class="glasses-product-color"></div>
-              <div class="glasses-product-color"></div>
-            </div>
-          </div>
-          <div class="glasses-product">
-            <div class="glasses-product-logo glasses-product-logo-3"></div>
-            <div class="glasses-product-prices">
-              <p>BJ41600S</p>
-              <p>NTD3,490</p>
-            </div>
-            <div class="glasses-product-colors">
-              <div class="glasses-product-color"></div>
-              <div class="glasses-product-color"></div>
-            </div>
-          </div>
-          <div class="glasses-product">
-            <div class="glasses-product-logo glasses-product-logo-4"></div>
-            <div class="glasses-product-prices">
-              <p>BJ41600S</p>
-              <p>NTD3,490</p>
-            </div>
-            <div class="glasses-product-colors">
-              <div class="glasses-product-color"></div>
-              <div class="glasses-product-color"></div>
-            </div>
-          </div>
-          <div class="glasses-product">
-            <div class="glasses-product-logo glasses-product-logo-5"></div>
-            <div class="glasses-product-prices">
-              <p>BJ41600S</p>
-              <p>NTD3,490</p>
-            </div>
-            <div class="glasses-product-colors">
-              <div class="glasses-product-color"></div>
-              <div class="glasses-product-color"></div>
-            </div>
-          </div>
-          <div class="glasses-product">
-            <div class="glasses-product-logo glasses-product-logo-6"></div>
-            <div class="glasses-product-prices">
-              <p>BJ41600S</p>
-              <p>NTD3,490</p>
-            </div>
-            <div class="glasses-product-colors">
-              <div class="glasses-product-color"></div>
-              <div class="glasses-product-color"></div>
-            </div>
-          </div>
-          <div class="glasses-product">
-            <div class="glasses-product-logo glasses-product-logo-1"></div>
-            <div class="glasses-product-prices">
-              <p>BJ41600S</p>
-              <p>NTD3,490</p>
-            </div>
-            <div class="glasses-product-colors">
-              <div class="glasses-product-color"></div>
-              <div class="glasses-product-color"></div>
-            </div>
-          </div>
-          <div class="glasses-product">
-            <div class="glasses-product-logo glasses-product-logo-2"></div>
-            <div class="glasses-product-prices">
-              <p>BJ41600S</p>
-              <p>NTD3,490</p>
-            </div>
-            <div class="glasses-product-colors">
-              <div class="glasses-product-color"></div>
-              <div class="glasses-product-color"></div>
-            </div>
-          </div>
-          <div class="glasses-product">
-            <div class="glasses-product-logo glasses-product-logo-3"></div>
-            <div class="glasses-product-prices">
-              <p>BJ41600S</p>
-              <p>NTD3,490</p>
-            </div>
-            <div class="glasses-product-colors">
-              <div class="glasses-product-color"></div>
-              <div class="glasses-product-color"></div>
-            </div>
-          </div>
-          <div class="glasses-product">
-            <div class="glasses-product-logo glasses-product-logo-4"></div>
-            <div class="glasses-product-prices">
-              <p>BJ41600S</p>
-              <p>NTD3,490</p>
-            </div>
-            <div class="glasses-product-colors">
-              <div class="glasses-product-color"></div>
-              <div class="glasses-product-color"></div>
-            </div>
-          </div>
-          <div class="glasses-product">
-            <div class="glasses-product-logo glasses-product-logo-5"></div>
-            <div class="glasses-product-prices">
-              <p>BJ41600S</p>
-              <p>NTD3,490</p>
-            </div>
-            <div class="glasses-product-colors">
-              <div class="glasses-product-color"></div>
-              <div class="glasses-product-color"></div>
-            </div>
-          </div>
-          <div class="glasses-product">
-            <div class="glasses-product-logo glasses-product-logo-6"></div>
-            <div class="glasses-product-prices">
-              <p>BJ41600S</p>
-              <p>NTD3,490</p>
-            </div>
-            <div class="glasses-product-colors">
-              <div class="glasses-product-color"></div>
-              <div class="glasses-product-color"></div>
-            </div>
-          </div>
-        </div>
+        <ul class="glasses-products-group">
+          <% for (var i =1; i <=6;  i++ ) { %>
+            <li class="glasses-product">
+              <div class="glasses-product-logo glasses-product-logo-<%= i %>"></div>
+              <div class="glasses-product-prices">
+                <!-- ; 產品名稱可改用標題標籤設計 -->
+                <h3>BJ41600S</h3>
+                <p>NTD3,490</p>
+              </div>
+              <div class="glasses-product-colors">
+                <div class="glasses-product-color"></div>
+                <div class="glasses-product-color"></div>
+              </div>
+            </li>
+            <% } %>            
+          <% for (var i =1; i <=6;  i++ ) { %>
+            <li class="glasses-product">
+              <div class="glasses-product-logo glasses-product-logo-<%= i %>"></div>
+              <div class="glasses-product-prices">
+                <h3>BJ41600S</h3>
+                <p>NTD3,490</p>
+              </div>
+              <div class="glasses-product-colors">
+                <div class="glasses-product-color"></div>
+                <div class="glasses-product-color"></div>
+              </div>
+            </li>
+          <% } %>            
+        </ul>
       </div>
     </div>
   </div>
@@ -171,74 +66,21 @@
       <div class="container">
         <h2 class="fs-42 fs-sm-24 fw-medium">2020 NEW COLLECTION</h2>
         <p class="fs-32 fs-sm-24 mb-32 mb-sm-24">賽璐珞鈦金屬混合鏡框</p>
-        <div class="glasses-products-group glasses-products-group-2">
-          <div class="glasses-product">
-            <div class="glasses-product-logo glasses-product-logo-7"></div>
-            <div class="glasses-product-prices">
-              <p>BJ41600S</p>
-              <p>NTD3,490</p>
-            </div>
-            <div class="glasses-product-colors">
-              <div class="glasses-product-color"></div>
-              <div class="glasses-product-color"></div>
-            </div>
-          </div>
-          <div class="glasses-product">
-            <div class="glasses-product-logo glasses-product-logo-8"></div>
-            <div class="glasses-product-prices">
-              <p>BJ41600S</p>
-              <p>NTD3,490</p>
-            </div>
-            <div class="glasses-product-colors">
-              <div class="glasses-product-color"></div>
-              <div class="glasses-product-color"></div>
-            </div>
-          </div>
-          <div class="glasses-product">
-            <div class="glasses-product-logo glasses-product-logo-9"></div>
-            <div class="glasses-product-prices">
-              <p>BJ41600S</p>
-              <p>NTD3,490</p>
-            </div>
-            <div class="glasses-product-colors">
-              <div class="glasses-product-color"></div>
-              <div class="glasses-product-color"></div>
-            </div>
-          </div>
-          <div class="glasses-product">
-            <div class="glasses-product-logo glasses-product-logo-10"></div>
-            <div class="glasses-product-prices">
-              <p>BJ41600S</p>
-              <p>NTD3,490</p>
-            </div>
-            <div class="glasses-product-colors">
-              <div class="glasses-product-color"></div>
-              <div class="glasses-product-color"></div>
-            </div>
-          </div>
-          <div class="glasses-product">
-            <div class="glasses-product-logo glasses-product-logo-11"></div>
-            <div class="glasses-product-prices">
-              <p>BJ41600S</p>
-              <p>NTD3,490</p>
-            </div>
-            <div class="glasses-product-colors">
-              <div class="glasses-product-color"></div>
-              <div class="glasses-product-color"></div>
-            </div>
-          </div>
-          <div class="glasses-product">
-            <div class="glasses-product-logo glasses-product-logo-12"></div>
-            <div class="glasses-product-prices">
-              <p>BJ41600S</p>
-              <p>NTD3,490</p>
-            </div>
-            <div class="glasses-product-colors">
-              <div class="glasses-product-color"></div>
-              <div class="glasses-product-color"></div>
-            </div>
-          </div>
-        </div>
+        <ul class="glasses-products-group glasses-products-group-2">
+          <% for (var i =7; i <=12;  i++ ) { %>
+            <li class="glasses-product">
+              <div class="glasses-product-logo glasses-product-logo-<%= i %>"></div>
+              <div class="glasses-product-prices">
+                <h3>BJ41600S</h3>
+                <p>NTD3,490</p>
+              </div>
+              <div class="glasses-product-colors">
+                <div class="glasses-product-color"></div>
+                <div class="glasses-product-color"></div>
+              </div>
+            </li>
+          <% } %>
+        </ul>
       </div>
     </div>
   </div>
@@ -255,7 +97,7 @@
           <div class="glasses-product">
             <div class="glasses-product-logo glasses-product-logo-1"></div>
             <div class="glasses-product-prices">
-              <p>BJ41600S</p>
+              <h3>BJ41600S</h3>
               <p>NTD3,490</p>
             </div>
             <div class="glasses-product-colors">
@@ -266,7 +108,7 @@
           <div class="glasses-product">
             <div class="glasses-product-logo glasses-product-logo-2"></div>
             <div class="glasses-product-prices">
-              <p>BJ41600S</p>
+              <h3>BJ41600S</h3>
               <p>NTD3,490</p>
             </div>
             <div class="glasses-product-colors">
@@ -277,7 +119,7 @@
           <div class="glasses-product">
             <div class="glasses-product-logo glasses-product-logo-3"></div>
             <div class="glasses-product-prices">
-              <p>BJ41600S</p>
+              <h3>BJ41600S</h3>
               <p>NTD3,490</p>
             </div>
             <div class="glasses-product-colors">
@@ -288,7 +130,7 @@
           <div class="glasses-product">
             <div class="glasses-product-logo glasses-product-logo-4"></div>
             <div class="glasses-product-prices">
-              <p>BJ41600S</p>
+              <h3>BJ41600S</h3>
               <p>NTD3,490</p>
             </div>
             <div class="glasses-product-colors">
@@ -299,7 +141,7 @@
           <div class="glasses-product">
             <div class="glasses-product-logo glasses-product-logo-5"></div>
             <div class="glasses-product-prices">
-              <p>BJ41600S</p>
+              <h3>BJ41600S</h3>
               <p>NTD3,490</p>
             </div>
             <div class="glasses-product-colors">
@@ -310,7 +152,7 @@
           <div class="glasses-product">
             <div class="glasses-product-logo glasses-product-logo-6"></div>
             <div class="glasses-product-prices">
-              <p>BJ41600S</p>
+              <h3>BJ41600S</h3>
               <p>NTD3,490</p>
             </div>
             <div class="glasses-product-colors">
@@ -321,7 +163,7 @@
           <div class="glasses-product">
             <div class="glasses-product-logo glasses-product-logo-7"></div>
             <div class="glasses-product-prices">
-              <p>BJ41600S</p>
+              <h3>BJ41600S</h3>
               <p>NTD3,490</p>
             </div>
             <div class="glasses-product-colors">
@@ -332,7 +174,7 @@
           <div class="glasses-product">
             <div class="glasses-product-logo glasses-product-logo-8"></div>
             <div class="glasses-product-prices">
-              <p>BJ41600S</p>
+              <h3>BJ41600S</h3>
               <p>NTD3,490</p>
             </div>
             <div class="glasses-product-colors">
@@ -343,7 +185,7 @@
           <div class="glasses-product">
             <div class="glasses-product-logo glasses-product-logo-9"></div>
             <div class="glasses-product-prices">
-              <p>BJ41600S</p>
+              <h3>BJ41600S</h3>
               <p>NTD3,490</p>
             </div>
             <div class="glasses-product-colors">
@@ -354,7 +196,7 @@
           <div class="glasses-product">
             <div class="glasses-product-logo glasses-product-logo-10"></div>
             <div class="glasses-product-prices">
-              <p>BJ41600S</p>
+              <h3>BJ41600S</h3>
               <p>NTD3,490</p>
             </div>
             <div class="glasses-product-colors">
@@ -365,7 +207,7 @@
           <div class="glasses-product">
             <div class="glasses-product-logo glasses-product-logo-11"></div>
             <div class="glasses-product-prices">
-              <p>BJ41600S</p>
+              <h3>BJ41600S</h3>
               <p>NTD3,490</p>
             </div>
             <div class="glasses-product-colors">
@@ -376,7 +218,7 @@
           <div class="glasses-product">
             <div class="glasses-product-logo glasses-product-logo-12"></div>
             <div class="glasses-product-prices">
-              <p>BJ41600S</p>
+              <h3>BJ41600S</h3>
               <p>NTD3,490</p>
             </div>
             <div class="glasses-product-colors">
