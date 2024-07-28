@@ -165,8 +165,9 @@ form{
   }
 }
 @media screen and (max-width: 767px) {
-  .banner{
-    height: calc(100vh - 176px);
+  .banner, .text{
+    height: 396px;
+    // height: calc(100vh - 176px);
   }
   .banner .container{
     padding: 0 16px;
