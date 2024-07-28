@@ -5,18 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
-  <script type="module" crossorigin src="/glasses_website/assets/main-shVb_AI8.js"></script>
-  <link rel="stylesheet" crossorigin href="/glasses_website/assets/main-Ds2AWw_d.css">
+  <script type="module" crossorigin src="/glasses_website/assets/main-DCXVD00J.js"></script>
+  <link rel="stylesheet" crossorigin href="/glasses_website/assets/main-B5RczCRa.css">
 </head>
 <body>
-  <div class="header">
+  <div class="header bg-red">
   <div class="container header-container">
     <div class="logo">
-      <a href="./index.html">
-        <div class="main-logo"></div>
+      <a href="./index.html">        
+        <!-- h1標籤加在logo上 -->
+        <h1 class="main-logo"></h1>
       </a>
     </div>
-    <div class="links">
+    <div class="links text-white">
       <ul>
         <li><a class="fs-20 fs-sm-16 btn-hover" href="./product.html">系列鏡框</a></li>
         <li><a class="fs-20 fs-sm-16 btn-hover" href="./locations.html">門市據點</a></li>
@@ -27,10 +28,9 @@
   </div>
 </div>
   <div class="locations">
-    <div class="container p-0 p-md-36">
-      <div class="locations-title mb-32 mb-sm-24">
-  <h2 class="fs-48 fs-sm-24 fw-bold ml-16">門市據點</h2>
-</div>
+    <div class="container p-md-36">
+      <!-- ; 「門市據點」左側線條不需多包一層 div 處理，可直接搭配 padding-left 推出適當間距 -->
+<h2 class="locations-title mb-32 mb-sm-24 fs-48 fs-sm-24 fw-bold">門市據點</h2>
       <div class="location-details">
         <div class="location-select mb-40 mb-sm-24">
           <h3 class="text-black fs-24 fs-sm-16">選擇分店</h3>
@@ -41,7 +41,7 @@
             </select>
           </div>
         </div>
-        <div class="location-detail-group">
+        <div class="location-detail-group location-row">
           <div class="location-detail location-page">
             <div class="location-logo location-logo-1 location-page-logo"></div>
             <div class="location-page-text">
@@ -49,7 +49,7 @@
               <div class="store-infos">
                 <div class="store-info">
                   <div class="store-info-icon">
-                    <span class="material-symbols-outlined icon-black">
+                    <span class="material-symbols-outlined icon-black fs-md-20">
                       call
                     </span>
                   </div>
@@ -57,7 +57,7 @@
                 </div>
                 <div class="store-info">
                   <div class="store-info-icon">
-                    <span class="material-symbols-outlined icon-black">
+                    <span class="material-symbols-outlined icon-black fs-md-20">
                       schedule
                     </span>
                   </div>                
@@ -113,7 +113,7 @@
       </div>
     </div>
   </div>
-  <div class="footer">
+  <div class="footer bg-red text-white">
   <div class="container">
     <div class="footer-links">
       <div class="list">
@@ -134,16 +134,17 @@
       </div>
     </div>
     <div class="contacts">
+      <!-- ; 底部電話、信箱也可加上 a 標籤與 hover 效果，並使用 a 標籤的 Emmet 語法 a:tel, a:mail，提升使用者體驗 -->
       <div class="contact">
-        <span class="material-symbols-outlined">
-          call
-          </span>
+        <a class="link-hover" href="mailto:">
+          <span class="material-symbols-outlined fs-36 fs-sm-18">call</span>
+        </a>
         <h3 class="contact-text fs-sm-16">0800-000-000</h3>
       </div>
       <div class="contact">
-        <span class="material-symbols-outlined">
-          mail
-        </span>
+        <a class="link-hover" href="tel:+">
+          <span class="material-symbols-outlined fs-36 fs-sm-18">mail</span>
+        </a>
         <h3 class="contact-text fs-sm-16">glasses@business.com</h3>
       </div>
     </div>
